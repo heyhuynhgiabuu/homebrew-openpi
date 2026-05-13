@@ -1,18 +1,25 @@
-# Heyhuynhgiabuu Openpi
+# Homebrew tap for OpenPi
 
-## How do I install these formulae?
+Install OpenPi with Homebrew:
 
-`brew install heyhuynhgiabuu/openpi/<formula>`
-
-Or `brew tap heyhuynhgiabuu/openpi` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "heyhuynhgiabuu/openpi"
-brew "<formula>"
+```sh
+brew tap heyhuynhgiabuu/openpi
+brew install --cask openpi
 ```
 
-## Documentation
+Upgrade OpenPi:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```sh
+brew update
+brew upgrade --cask openpi
+```
+
+OpenPi beta builds are currently unsigned. Homebrew handles download/install/upgrade, but macOS may still quarantine unsigned apps. If macOS blocks first launch, remove quarantine manually:
+
+```sh
+xattr -rd com.apple.quarantine /Applications/OpenPi.app
+```
+
+Fully avoiding Gatekeeper/quarantine prompts requires Developer ID signing and notarization.
+
+OpenPi releases: <https://github.com/heyhuynhgiabuu/openpi/releases>
