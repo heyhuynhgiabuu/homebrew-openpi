@@ -1,6 +1,6 @@
 cask "openpi" do
-  version "0.1.8"
-  sha256 "ad66dffb096c75d052769cec801ff9fac6a30b36f833e7c023b006e829938050"
+  version "0.1.9"
+  sha256 "e31b1fefb79b3baa8bb505f36b3dbaca1ed8dd71b216a14e41acbeb87ec97553"
 
   url "https://github.com/heyhuynhgiabuu/openpi/releases/download/v#{version}/OpenPi-#{version}-arm64.dmg"
   name "OpenPi"
