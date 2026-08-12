@@ -1,13 +1,13 @@
 cask "openpi" do
-  version "0.2.5"
+  version "0.2.6"
 
   on_arm do
-    sha256 "a775c7b22896f0e9e10b70728a2896e0696f7919e2727f732444afb5a9ae9a8d"
+    sha256 "26b073f90c71c4acda5cdbf6a926599031d35bd47af45a2d2eefdc70f84f5918"
 
     url "https://github.com/heyhuynhgiabuu/openpi/releases/download/v#{version}/OpenPi-#{version}-arm64.dmg"
   end
   on_intel do
-    sha256 "1afb478026de4b7d9bea1441fa82dfbc236e836743c4d57839ec7bedea8e145e"
+    sha256 "ddd92fac6bf525187bf3e46f462a42dbe13433f42fd069f1d8c9828e6122890f"
 
     url "https://github.com/heyhuynhgiabuu/openpi/releases/download/v#{version}/OpenPi-#{version}-x64.dmg"
   end
